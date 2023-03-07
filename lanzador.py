@@ -1,4 +1,5 @@
-from filosofo import *
+from otro_formato import *
+
 def lanzar():
     Nfilosofos = 5
 
@@ -7,7 +8,7 @@ def lanzar():
     for i in range(Nfilosofos):
         tenedor[i] = threading.BoundedSemaphore(1)
 
-    for i in [0,1,2,3,4]:
+    for i in range(0,4):
         t = Filosofo(i, tenedor)
         t.start()
         time.sleep(0.5)
