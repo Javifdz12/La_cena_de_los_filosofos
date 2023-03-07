@@ -41,3 +41,4 @@ class Filosofo(threading.Thread):
             self.come()
             self.liberaTenDer()
             self.liberaTenIzq()
+
